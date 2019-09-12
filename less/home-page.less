@@ -1,5 +1,3 @@
-
-
 .home {
 
   .welcome{
@@ -66,7 +64,27 @@
       margin-bottom: 30px;
     }
     .btn{
-      .button(100%, 45px, "roboto", 2rem, white, #028080);
+      .button(100%, 45px, "roboto", 2rem, @white, @eastern-blue);
     }
   }
 }// home
+
+@media @mobile{
+  .home{
+    .content-pick{
+      flex-direction: column;
+      flex-wrap: wrap;
+      .destination{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .btn{
+          width: 30%;
+        }
+      }
+    }
+  }
+}

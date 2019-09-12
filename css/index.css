@@ -253,10 +253,26 @@ img {
   height: 45px;
   font-family: "roboto";
   font-size: 2rem;
-  color: white;
-  background-color: #028080;
+  color: #FFFFFF;
+  background-color: #17A2B8;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .home .content-pick .destination {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .content-pick .destination .btn {
+    width: 30%;
+  }
 }
